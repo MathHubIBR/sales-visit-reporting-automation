@@ -1,52 +1,70 @@
-# 📊 Commercial Performance Dashboard
+# 📊 Sales Visit Reporting Automation
 
-> An automated Excel solution designed to streamline sales activity management, standardize customer visit tracking, and provide actionable business insights through interactive dashboards.
-
----
-
-## 📖 Overview
-
-This project was developed to solve a common challenge faced by commercial teams: the lack of a standardized process for tracking customer visits and field activities.
-
-Previously, sales representatives shared their weekly schedules via WhatsApp, requiring an administrative assistant to manually transfer each appointment into a physical agenda for management review. This process was time-consuming, error-prone, and lacked visibility.
-
-To address this, I designed a complete workflow using **Google Forms** and **Microsoft Excel**, transforming manual data collection into an automated reporting system that enables managers to monitor commercial activities in real time.
+> An end-to-end Business Intelligence solution built with Microsoft Power Platform to automate sales visit reporting, standardize field activity tracking, and deliver actionable insights through an interactive Power BI dashboard.
 
 ---
 
-## 🎯 Business Challenge
+# 📖 Overview
 
-The original process presented several operational issues:
+This project was developed to modernize and automate the commercial visit reporting process for a sales team.
+
+Originally, sales representatives shared their weekly schedules through WhatsApp. An administrative assistant manually transferred each appointment into a physical planner so managers could track field activities. Besides consuming valuable time, this process was highly dependent on manual work, susceptible to transcription errors, and provided little visibility into commercial performance.
+
+To eliminate these inefficiencies, I designed and implemented an automated reporting solution using **Microsoft Forms**, **Power Automate**, **Excel Online**, and **Power BI**.
+
+The solution standardizes data collection, automates data consolidation, and transforms operational records into interactive business intelligence dashboards that support data-driven decision making.
+
+---
+
+# 🎯 Business Challenge
+
+The existing workflow presented several operational limitations:
 
 - Manual scheduling through WhatsApp messages
-- Rework caused by manual transcription
-- Inconsistent customer names due to typing errors
-- Limited visibility into sales representatives' activities
-- Difficulty generating performance reports
+- Manual transcription into a physical agenda
 - High dependency on administrative support
+- Inconsistent customer names caused by typing errors
+- No centralized reporting
+- Limited visibility into field activities
+- Time-consuming report generation
+- Difficulty monitoring sales performance
 
 ---
 
-## 💡 Solution
+# 💡 Solution
 
-A centralized solution was implemented using Google Forms as the data entry point and Excel as the reporting engine.
+An end-to-end reporting workflow was developed using Microsoft Power Platform.
 
-### Workflow
+Sales representatives submit their visit information through Microsoft Forms. Power Automate automatically validates and stores each submission in an Excel Online database. The dataset is then modeled in Power BI, where Power Query performs data transformation and DAX measures generate business KPIs.
+
+Managers can monitor commercial performance through an interactive dashboard updated from the centralized data source.
+
+---
+
+# 🏗 Solution Architecture
 
 ```text
 Sales Representatives
         │
         ▼
- Google Forms
-(Standardized Input)
+ Microsoft Forms
+(Standardized Data Entry)
         │
         ▼
- Excel Database
-(Data Validation)
+ Power Automate
+(Workflow Automation)
         │
         ▼
-Data Processing
-(Pivot Tables + Formulas)
+ Excel Online
+(Centralized Database)
+        │
+        ▼
+ Power Query
+(Data Transformation)
+        │
+        ▼
+ Power BI
+(Data Modeling + DAX)
         │
         ▼
 Interactive Dashboard
@@ -55,117 +73,188 @@ Interactive Dashboard
 Management Insights
 ```
 
-The form includes predefined customer lists (drop-down menus), ensuring data consistency and eliminating duplicate or incorrect records.
+---
 
+# 🚀 Key Features
 
-
-## 🚀 Key Features
-
-- Automated data collection
+- Automated sales visit registration
 - Standardized customer selection
-- Interactive commercial dashboard
-- Dynamic Pivot Tables
-- KPI monitoring
-- Weekly and monthly performance tracking
-- Customer visit analysis
-- Sales representative productivity tracking
-- Automated management reporting
-
-
-## 📈 Key Performance Indicators
-
-The dashboard provides insights such as:
-
-- Total Customer Visits
-- Visits per Sales Representative
-- Weekly Activity
-- Monthly Activity
-- Customer Coverage
-- Project Distribution
-- Activity Classification
-- Commercial Performance KPIs
-
-
-## 🛠 Technologies Used
-
-- Microsoft Excel
-- Google Forms
-- Pivot Tables
-- Advanced Excel Formulas
-- Conditional Formatting
-- Data Validation
-- Dashboard Design
-- VBA (where applicable)
-
-
-## 📊 Business Impact
-
-By replacing a manual scheduling workflow with a standardized digital process, this solution delivered several operational improvements:
-
-- ✅ Eliminated manual transcription of schedules
-- ✅ Standardized customer registration
-- ✅ Reduced reporting time
-- ✅ Increased data accuracy
-- ✅ Improved visibility of field activities
-- ✅ Enabled faster managerial decision-making
-- ✅ Created a centralized and scalable reporting process
+- Workflow automation using Power Automate
+- Centralized cloud-based database
+- Interactive Power BI dashboard
+- Dynamic KPI monitoring
+- Sales representative performance analysis
+- Customer visit tracking
+- Monthly performance monitoring
+- Project pipeline visibility
+- Interactive filtering and drill-down analysis
 
 ---
 
-## 📂 Project Structure
+# 📊 Dashboard Overview
+
+The dashboard provides a centralized view of commercial operations, allowing managers to quickly assess sales activity and identify performance trends.
+
+Main analytical sections include:
+
+- Total Visits
+- Visits by Sales Representative
+- Monthly Visit Trend
+- Customer Ranking
+- Most Visited Customers
+- New Business Opportunities
+- Commercial Performance Ranking
+- Interactive User Filtering
+
+---
+
+# 📈 Key Performance Indicators
+
+The dashboard tracks strategic business metrics such as:
+
+- Total Customer Visits
+- Visits per Sales Representative
+- Monthly Visit Evolution
+- Top Customers by Visit Frequency
+- New Projects Created
+- Sales Activity Distribution
+- Commercial Productivity
+- Representative Performance Ranking
+
+---
+
+# 🛠 Technologies Used
+
+### Business Intelligence
+
+- Power BI
+- DAX
+- Power Query
+
+### Microsoft Power Platform
+
+- Microsoft Forms
+- Power Automate
+- Excel Online
+
+### Data Analysis
+
+- Data Modeling
+- ETL
+- KPI Development
+- Dashboard Design
+- Data Visualization
+
+### Version Control
+
+- Git
+- GitHub
+
+---
+
+# 🔄 Data Processing
+
+The project follows a complete Business Intelligence pipeline:
+
+1. Sales representatives submit visit information through Microsoft Forms.
+2. Power Automate validates and stores the data automatically.
+3. Excel Online serves as the centralized operational database.
+4. Power Query cleans and transforms the data.
+5. Data modeling and DAX measures generate business metrics.
+6. Power BI delivers interactive dashboards for management.
+
+---
+
+# 📂 Project Structure
 
 ```text
-Commercial Performance Dashboard
+sales-visit-reporting-automation
 │
-├── Raw Database
-├── Data Validation
-├── Pivot Tables
-├── KPI Calculations
-├── Dashboard
-└── Management Reports
+├── Power BI Dashboard
+│
+├── Power Query
+│
+├── DAX Measures
+│
+├── Data Model
+│
+├── Power Automate Flow
+│
+├── Microsoft Forms
+│
+├── Excel Online Database
+│
+└── Documentation
 ```
 
+---
 
-## 💼 Skills Demonstrated
+# 📈 Business Impact
+
+The implementation replaced a manual reporting workflow with an automated Business Intelligence solution, generating several operational improvements:
+
+- ✅ Eliminated manual schedule transcription
+- ✅ Standardized customer registration
+- ✅ Improved data quality and consistency
+- ✅ Automated commercial reporting
+- ✅ Reduced administrative workload
+- ✅ Increased visibility into sales activities
+- ✅ Accelerated managerial decision-making
+- ✅ Centralized operational data
+- ✅ Created a scalable reporting process
+
+---
+
+# 💼 Skills Demonstrated
 
 This project demonstrates practical experience in:
 
-- Sales Operations
-- Business Intelligence
-- Process Improvement
-- Commercial Analytics
+### Business Intelligence
+
+- Power BI Development
+- Interactive Dashboard Design
 - KPI Development
-- Dashboard Design
-- Excel Automation
 - Data Modeling
-- Data Visualization
+- DAX
+- Power Query
+
+### Microsoft Power Platform
+
+- Power Automate
+- Microsoft Forms
+- Workflow Automation
+
+### Data Analytics
+
+- ETL
+- Data Transformation
+- Business Analysis
+- Commercial Analytics
 - Operational Reporting
 
+### Business
 
-## 🔄 Future Improvements
+- Sales Operations
+- Revenue Operations
+- Process Improvement
+- Performance Monitoring
 
-Planned enhancements include:
-
-- Power BI migration
-- SQL database integration
-- Power Automate workflow
-- Python ETL automation
-- Salesforce CRM integration
-- Real-time dashboard updates
+---
 
 
-## 📷 Dashboard Preview
+# 📷 Dashboard Preview
 
-<img width="1280" height="720" alt="dash performance comercial" src="https://github.com/user-attachments/assets/f47829ae-ff9d-4825-8b68-d9a5a9ca04bc" />
+<img width="1407" height="788" alt="{ED988070-4678-446A-B3C5-F3C828E3BE74}" src="https://github.com/user-attachments/assets/fa30c7c5-4511-4900-a50d-fd5b61a254af" />
 
+---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Matheus Carvalho**
 
-Sales Operations • Revenue Operations • Business Intelligence
+Business Intelligence • Sales Operations • Revenue Operations • Data Analytics
 
-- 💼 LinkedIn: https://www.linkedin.com/in/matheus-carvalho-8351b4157
+💼 LinkedIn: https://www.linkedin.com/in/matheus-carvalho-8351b4157
 
 ---
 
